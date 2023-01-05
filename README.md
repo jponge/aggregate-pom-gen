@@ -25,3 +25,5 @@ It will write a `pom.xml` file in the current folder, where each referenced modu
 ```
 go install github.com/jponge/aggregate-pom-gen
 ```
+
+...or get self-contained binaries from [the releases](https://github.com/jponge/aggregate-pom-gen/releases) 
