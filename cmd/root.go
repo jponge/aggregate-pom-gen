@@ -75,6 +75,7 @@ func doRun(cmd *cobra.Command, args []string) {
 					submodules = append(submodules, folder.Name())
 				}
 			}
+			dir.Close()
 		}
 	}
 
@@ -89,6 +90,7 @@ func doRun(cmd *cobra.Command, args []string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer pomFile.Close()
 
 	tmpl, err := template.New("pom").Parse(pomTemplate)
 	if err != nil {
