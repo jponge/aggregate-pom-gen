@@ -1,0 +1,5 @@
+
+dist/
+.idea/
+pom.xml
+aggregate-pom-gen
